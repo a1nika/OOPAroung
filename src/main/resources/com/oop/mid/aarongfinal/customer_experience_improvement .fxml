@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="663.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.CustomerExperienceImprovement">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="857.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <Label layoutX="152.0" layoutY="26.0" prefHeight="44.0" prefWidth="553.0" text="Customer Experience Improvement ">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="119.0" prefHeight="17.0" prefWidth="117.0" text="Customer Name" />
+      <Label layoutX="25.0" layoutY="166.0" prefHeight="17.0" prefWidth="117.0" text="Interaction Date" />
+      <Label layoutX="357.0" layoutY="119.0" prefHeight="17.0" prefWidth="117.0" text="Issue Description" />
+      <Label layoutX="357.0" layoutY="206.0" prefHeight="17.0" prefWidth="147.0" text="Improvement Suggestions" />
+      <Label layoutX="25.0" layoutY="245.0" prefHeight="17.0" prefWidth="117.0" text="Customer Feedback" />
+      <Label layoutX="357.0" layoutY="245.0" prefHeight="17.0" prefWidth="117.0" text="Follow-up Required" />
+      <Label layoutX="357.0" layoutY="287.0" prefHeight="17.0" prefWidth="117.0" text="Follow-up Date" />
+      <Label layoutX="25.0" layoutY="206.0" prefHeight="17.0" prefWidth="117.0" text="Interaction Channel" />
+      <Label layoutX="25.0" layoutY="287.0" prefHeight="17.0" prefWidth="117.0" text="Feedback Rating" />
+      <Label layoutX="357.0" layoutY="166.0" prefHeight="17.0" prefWidth="117.0" text="Resolution Status" />
+      <TextField fx:id="nametextfield" layoutX="158.0" layoutY="115.0" style="-fx-border-color: #FBC02D;" />
+      <DatePicker fx:id="dob1" layoutX="158.0" layoutY="162.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <ComboBox fx:id="channeltextfield" layoutX="158.0" layoutY="202.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <ComboBox fx:id="ratingcombobox" layoutX="158.0" layoutY="283.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="feedbacktextfield" layoutX="158.0" layoutY="241.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="issuetextfield" layoutX="515.0" layoutY="115.0" style="-fx-border-color: #FBC02D;" />
+      <ComboBox fx:id="satuscombobox" layoutX="515.0" layoutY="162.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="suggestiontextfield" layoutX="515.0" layoutY="202.0" style="-fx-border-color: #FBC02D;" />
+      <RadioButton fx:id="yesradiobutton" layoutX="515.0" layoutY="245.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton fx:id="noradiobutton" layoutX="614.0" layoutY="245.0" mnemonicParsing="false" text="No" />
+      <DatePicker fx:id="dob2" layoutX="515.0" layoutY="283.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <TableView fx:id="customerexperienceimprovementshowtable" layoutX="13.0" layoutY="359.0" prefHeight="219.0" prefWidth="836.0" style="-fx-border-color: #FBC02D;">
+        <columns>
+          <TableColumn fx:id="nametableview" prefWidth="75.0" text="Customer Name" />
+          <TableColumn fx:id="dob1tableview" prefWidth="75.0" text="Interaction Date" />
+            <TableColumn fx:id="channeltableview" prefWidth="75.0" text="Interaction Channel" />
+            <TableColumn fx:id="feedbacktableview" prefWidth="75.0" text="Customer Feedback" />
+            <TableColumn fx:id="ratngtableview" prefWidth="75.0" text="Feedback Rating" />
+            <TableColumn fx:id="issuetableview" prefWidth="75.0" text="Issue Description" />
+            <TableColumn fx:id="statustableview" prefWidth="75.0" text="Resolution Status" />
+            <TableColumn fx:id="suggesttableview" prefWidth="98.0" text="Improvement Suggestions" />
+            <TableColumn fx:id="requiretableviw" prefWidth="117.0" text="Follow-up Required" />
+            <TableColumn fx:id="dob2tableview" prefWidth="95.0" text="Follow-up Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="725.0" layoutY="319.0" mnemonicParsing="false" onAction="#addbtn" prefHeight="25.0" prefWidth="88.0" text="Add" />
+      <Button layoutX="29.0" layoutY="617.0" mnemonicParsing="false" onAction="#returnbtn" prefHeight="25.0" prefWidth="88.0" text="Return" />
+      <Button layoutX="760.0" layoutY="617.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="25.0" prefWidth="88.0" text="Log out" />
+   </children>
+</AnchorPane>
