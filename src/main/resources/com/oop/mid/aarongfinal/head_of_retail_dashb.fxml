@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="495.0" prefWidth="707.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.InventoryManagement">
+<AnchorPane prefHeight="495.0" prefWidth="707.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.head_of_retail_dashbController">
    <children>
       <AnchorPane layoutX="28.0" layoutY="27.0" prefHeight="442.0" prefWidth="651.0" style="-fx-background-color: white;">
          <children>
-            <Label layoutX="186.0" layoutY="-2.0" prefHeight="61.0" prefWidth="310.0" text="Head of Retail DashBoard" textAlignment="CENTER">
+            <Label layoutX="186.0" layoutY="-2.0" prefHeight="61.0" prefWidth="310.0" text="Head of Retail DashBoard" textAlignment="CENTER" textFill="#900505">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>

@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="663.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.CustomerExperienceImprovement">
+<AnchorPane prefHeight="663.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.customer_experience_improvementController">
    <children>
       <AnchorPane prefHeight="96.0" prefWidth="857.0" style="-fx-background-color: #FBC02D;">
          <children>
