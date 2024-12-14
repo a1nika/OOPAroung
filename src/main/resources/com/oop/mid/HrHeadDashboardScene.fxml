@@ -13,17 +13,17 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <Button fx:id="recruitMemberButton" layoutX="150.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadRecruitMemberOnClick" prefHeight="58.0" prefWidth="139.0" text="Recruit New Member">
+      <Button fx:id="recruitMemberButton" layoutX="502.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadRecruitMemberOnClick" prefHeight="58.0" prefWidth="139.0" text="Recruit New Member">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="distributeSalaryButton" layoutX="330.0" layoutY="98.0" mnemonicParsing="false" onAction="#LoadDistributeSalaryOnClick" prefHeight="58.0" prefWidth="139.0" text="Distribute Salary">
+      <Button fx:id="distributeSalaryButton" layoutX="144.0" layoutY="104.0" mnemonicParsing="false" onAction="#LoadDistributeSalaryOnClick" prefHeight="58.0" prefWidth="139.0" text="Distribute Salary">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="aLeaveOFAbsenceButton" layoutX="521.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadALeaveOFAbsenceOnClick" prefHeight="58.0" prefWidth="139.0" text="Approve Leave of Absence">
+      <Button fx:id="aLeaveOFAbsenceButton" layoutX="144.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadALeaveOFAbsenceOnClick" prefHeight="58.0" prefWidth="139.0" text="Approve Leave of Absence">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -38,7 +38,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="perfomenceAnnalysisButton" layoutX="521.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadPerfomenceAnnalysisOnClick" prefHeight="58.0" prefWidth="139.0" text="Perfomence Annalysis">
+      <Button fx:id="perfomenceAnnalysisButton" layoutX="502.0" layoutY="104.0" mnemonicParsing="false" onAction="#loadPerfomenceAnnalysisOnClick" prefHeight="58.0" prefWidth="139.0" text="Perfomence Annalysis">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -48,7 +48,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="arrangeTrainingButton" layoutX="144.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadArrangeTrainingOnClick" prefHeight="58.0" prefWidth="139.0" text="Arrange Training">
+      <Button fx:id="arrangeTrainingButton" layoutX="330.0" layoutY="104.0" mnemonicParsing="false" onAction="#loadArrangeTrainingOnClick" prefHeight="58.0" prefWidth="139.0" text="Arrange Training">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
