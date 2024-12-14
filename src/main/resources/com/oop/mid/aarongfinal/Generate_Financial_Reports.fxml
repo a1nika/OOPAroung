@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="565.0" prefWidth="693.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.GenerateFinancialReportsController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="17.0" prefHeight="531.0" prefWidth="657.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="generatefinancialreportlabel" alignment="CENTER" layoutY="-9.0" prefHeight="46.0" prefWidth="657.0" style="-fx-background-color: #FBC02D;" text="GENERATE FINANCIAL REPORTS" textFill="#900505">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="551.0" layoutY="491.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #FFA700;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="profittextfield" layoutX="137.0" layoutY="194.0" style="-fx-border-color: #FBC02D;" />
+            <Text layoutX="27.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Type" />
+            <Text layoutX="27.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction ID" />
+            <Button layoutX="23.0" layoutY="252.0" mnemonicParsing="false" onAction="#savereportbtn" prefHeight="28.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" text="Save Report" />
+            <Text layoutX="25.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" wrappingWidth="48.076171875" />
+            <ComboBox fx:id="categorycombobox" layoutX="138.0" layoutY="104.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+            <TextField fx:id="transactionidtextfield" layoutX="138.0" layoutY="57.0" style="-fx-border-color: #FBC02D;" />
+            <TableView fx:id="financialreporttableview" layoutX="10.0" layoutY="339.0" prefHeight="141.0" prefWidth="635.0" style="-fx-border-color: #FBC02D;">
+               <columns>
+                  <TableColumn fx:id="transactionidcolumn" prefWidth="97.33331489562988" text="Transaction ID" />
+                  <TableColumn fx:id="categorycolumn" prefWidth="84.66670989990234" text="Category" />
+                  <TableColumn fx:id="startdatecolumn" prefWidth="85.33335876464844" text="Start Date" />
+                  <TableColumn fx:id="enddatecolumn" prefWidth="92.66668701171875" text="End Date" />
+                  <TableColumn fx:id="revenuecolumn" prefWidth="105.99993896484375" text="Revenue" />
+                  <TableColumn fx:id="expensecolumn" prefWidth="88.66665649414062" text="Expense" />
+                  <TableColumn fx:id="profitcolumn" prefWidth="80.66668701171875" text="Profit" />
+               </columns>
+            </TableView>
+            <Text layoutX="375.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />
+            <TextField fx:id="enddatetextfield" layoutX="482.0" layoutY="104.0" style="-fx-border-color: #FBC20D;" />
+            <Text layoutX="377.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue" />
+            <TextField fx:id="revenuetextfield" layoutX="482.0" layoutY="149.0" style="-fx-border-color: #FBC20D;" />
+            <ComboBox fx:id="reporttypecombobox" layoutX="138.0" layoutY="149.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+            <Text layoutX="31.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit" />
+            <Button layoutX="261.0" layoutY="252.0" mnemonicParsing="false" onAction="#cancelbtn" prefHeight="28.0" prefWidth="134.0" style="-fx-border-color: #FBC02D;" text="Cancel" />
+            <Button layoutX="484.0" layoutY="296.0" mnemonicParsing="false" onAction="#generatefinancialreportbtn" style="-fx-border-color: #FBC02D;" text="Generate Financial Report" />
+            <Text layoutX="375.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+            <TextField fx:id="startdatetextfield" layoutX="482.0" layoutY="57.0" style="-fx-border-color: #FBC02D;" />
+            <Text layoutX="377.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expense" />
+            <TextField fx:id="expensetextfield" layoutX="483.0" layoutY="196.0" style="-fx-border-color: #FBC02D;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

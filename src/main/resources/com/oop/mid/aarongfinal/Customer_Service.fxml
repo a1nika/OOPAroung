@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.CustomerServiceController">
+   <children>
+      <AnchorPane prefHeight="573.0" prefWidth="693.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <AnchorPane layoutX="18.0" layoutY="19.0" prefHeight="539.0" prefWidth="657.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="customerservicelabel" alignment="CENTER" layoutY="-9.0" prefHeight="46.0" prefWidth="657.0" style="-fx-background-color: #FBC02D;" text="CUSTOMER SERVICE" textFill="#900505">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="557.0" layoutY="499.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #FFA700;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="customernametextfield" layoutX="131.0" layoutY="66.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="27.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+                  <Text layoutX="398.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+                  <TextField fx:id="customeridtextfield" layoutX="482.0" layoutY="65.0" style="-fx-border-color: #FBC02D;" />
+                  <Button layoutX="482.0" layoutY="304.0" mnemonicParsing="false" onAction="#sendmessagebtn" prefHeight="28.0" prefWidth="160.0" style="-fx-border-color: #FBC02D;" text="Send Message" />
+                  <Text layoutX="396.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="70.29492187499994" />
+                  <TableView fx:id="productdetailstableview" layoutX="11.0" layoutY="343.0" prefHeight="143.0" prefWidth="635.0" style="-fx-border-color: #FBC02D;">
+                     <columns>
+                        <TableColumn fx:id="customernamecolumn" prefWidth="140.66668128967285" text="Customer Name" />
+                        <TableColumn fx:id="customeridcolumn" prefWidth="110.00001525878906" text="Customer ID" />
+                        <TableColumn fx:id="contactnocolumn" prefWidth="103.33331298828125" text="Contact No" />
+                        <TableColumn fx:id="emailcolumn" prefWidth="113.33331298828125" text="Email" />
+                        <TableColumn fx:id="addresscolumn" prefWidth="166.66665649414062" text="Address" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="29.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No" />
+                  <TextField fx:id="contactnotextfield" layoutX="131.0" layoutY="110.0" style="-fx-border-color: #FBC02D;" />
+                  <TextField fx:id="emailtextfield" layoutX="131.0" layoutY="155.0" style="-fx-border-color: #FBC02D;" />
+                  <TextArea fx:id="addresstextfield" layoutX="449.0" layoutY="115.0" prefHeight="84.0" prefWidth="197.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="29.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                  <Text layoutX="27.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Type" />
+                  <TextArea fx:id="messagetextfield" layoutX="89.0" layoutY="236.0" prefHeight="68.0" prefWidth="346.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="32.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+                  <ComboBox fx:id="messagetypecombobox" layoutX="131.0" layoutY="195.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
