@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.InventoryManagementController">
+   <children>
+      <AnchorPane prefHeight="565.0" prefWidth="693.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <AnchorPane layoutX="18.0" layoutY="17.0" prefHeight="531.0" prefWidth="657.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="inventorymanagementlabel" alignment="CENTER" layoutY="-9.0" prefHeight="46.0" prefWidth="657.0" style="-fx-background-color: #FBC02D;" text="INVENTORY MANAGEMENT" textFill="#900505">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="551.0" layoutY="491.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #FFA700;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="productnametextfield" layoutX="131.0" layoutY="57.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="27.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name" />
+                  <Text layoutX="26.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
+                  <Button layoutX="23.0" layoutY="252.0" mnemonicParsing="false" onAction="#addnewproductbtn" prefHeight="28.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" text="Add New Product" />
+                  <Text layoutX="30.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                  <ComboBox fx:id="categorycombobox" layoutX="131.0" layoutY="149.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+                  <TextField fx:id="productidtextfield" layoutX="131.0" layoutY="104.0" style="-fx-border-color: #FBC02D;" />
+                  <TableView fx:id="inventorytableview" layoutX="10.0" layoutY="339.0" prefHeight="141.0" prefWidth="635.0" style="-fx-border-color: #FBC02D;">
+                     <columns>
+                        <TableColumn fx:id="productnamecolumn" prefWidth="131.33334350585938" text="Product Name" />
+                        <TableColumn fx:id="productidcolumn" prefWidth="92.6666259765625" text="Product ID" />
+                        <TableColumn fx:id="stockquantitycolumn" prefWidth="106.0" text="Stock Quantity" />
+                        <TableColumn fx:id="categorycolumn" prefWidth="75.0" text="Category" />
+                        <TableColumn fx:id="reorderlevelcolumn" prefWidth="99.99993896484375" text="Reorder Level" />
+                        <TableColumn fx:id="suppliernamecolumn" prefWidth="126.6666259765625" text="Supplier Name" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="375.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Quantity" />
+                  <TextField fx:id="stockquantitytextfield" layoutX="482.0" layoutY="104.0" style="-fx-border-color: #FBC20D;" />
+                  <Text layoutX="377.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reorder Level" />
+                  <TextField fx:id="reorderleveltextfield" layoutX="482.0" layoutY="149.0" style="-fx-border-color: #FBC20D;" />
+                  <ComboBox fx:id="stockstatuscombobox" layoutX="131.0" layoutY="195.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="33.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Status" />
+                  <Button layoutX="484.0" layoutY="252.0" mnemonicParsing="false" onAction="#updatestockbtn" prefHeight="28.0" prefWidth="134.0" style="-fx-border-color: #FBC02D;" text="Update Stock" />
+                  <Button layoutX="261.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteproductbtn" prefHeight="28.0" prefWidth="134.0" style="-fx-border-color: #FBC02D;" text="Delete Product" />
+                  <Button layoutX="484.0" layoutY="296.0" mnemonicParsing="false" onAction="#exportinventorydatabtn" style="-fx-border-color: #FBC02D;" text="Export Inventory Data" />
+                  <Text layoutX="375.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name" />
+                  <TextField fx:id="suppliernametextfield" layoutX="482.0" layoutY="57.0" style="-fx-border-color: #FBC02D;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

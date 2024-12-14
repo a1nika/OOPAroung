@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.mid.aarongfinal.ManageCart"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.ManageCartController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="565.0" prefWidth="701.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="13.0" prefHeight="537.0" prefWidth="660.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="managecartlabel" alignment="CENTER" layoutX="-2.0" layoutY="-7.0" prefHeight="42.0" prefWidth="662.0" style="-fx-background-color: #FBC02D;" text="MANAGE CART" textFill="#900505">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="557.0" layoutY="497.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #FFA700;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="productnametextfield" layoutX="119.0" layoutY="74.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="27.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name" />
+                  <Text layoutX="365.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
+                  <TextField fx:id="productidtextfield" layoutX="454.0" layoutY="74.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="30.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Price" />
+                  <TextField fx:id="productpricetextfield" layoutX="119.0" layoutY="132.0" style="-fx-border-color: #FBC02D;" />
+                  <Button layoutX="119.0" layoutY="192.0" mnemonicParsing="false" onAction="#addtocartbtn" style="-fx-border-color: #FBC02D;" text="Add To Cart" />
+                  <Button layoutX="454.0" layoutY="192.0" mnemonicParsing="false" onAction="#removetocartbtn" style="-fx-border-color: #FBC02D;" text="Remove To Cart" />
+                  <TableView fx:id="productdetailstableview" layoutX="13.0" layoutY="238.0" prefHeight="142.0" prefWidth="629.0" style="-fx-border-color: #FBC02D;">
+                     <columns>
+                        <TableColumn fx:id="productnamecolumn" prefWidth="192.66668128967285" text="Product Name" />
+                        <TableColumn fx:id="productidcolumn" prefWidth="153.33335876464844" text="Product ID" />
+                        <TableColumn fx:id="productpricecolumn" prefWidth="156.66665649414062" text="Product Price" />
+                        <TableColumn fx:id="quantitycolumn" prefWidth="124.6666259765625" text="Quantity" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="370.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+                  <TextField fx:id="quantitytextfield" layoutX="454.0" layoutY="132.0" style="-fx-border-color: #FBC02D;" />
+                  <Button layoutX="13.0" layoutY="394.0" mnemonicParsing="false" onAction="#showtotalamountbtn" prefHeight="95.0" prefWidth="341.0" style="-fx-border-color: #FBC02D;" text="Show Total Amount" />
+                  <Line endX="102.66668701171875" endY="-23.666656494140625" layoutX="552.0" layoutY="410.0" startX="-545.3333740234375" startY="-23.666656494140625" />
+                  <Line endX="-54.666656494140625" endY="69.66665649414062" layoutX="416.0" layoutY="424.0" startX="-54.666656494140625" startY="-38.166656494140625" />
+                  <TextArea fx:id="showtotalamounttextfield" layoutX="372.0" layoutY="394.0" prefHeight="95.0" prefWidth="276.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

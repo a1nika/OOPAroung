@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.ReviewCustomerFeedbackController">
+   <children>
+      <AnchorPane prefHeight="565.0" prefWidth="693.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <AnchorPane layoutX="18.0" layoutY="19.0" prefHeight="531.0" prefWidth="657.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="reviewcustomerfeedbacklabel" alignment="CENTER" layoutY="-9.0" prefHeight="46.0" prefWidth="657.0" style="-fx-background-color: #FBC02D;" text="REVIEW CUSTOMER FEEDBACK" textFill="#900505">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="551.0" layoutY="491.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #FFA700;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="customernametextfield" layoutX="145.0" layoutY="66.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="27.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+                  <Text layoutX="27.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                  <Text layoutX="27.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respond To Feedback" />
+                  <TextField fx:id="datetextfield" layoutX="145.0" layoutY="117.0" style="-fx-border-color: #FBC02D;" />
+                  <Text layoutX="355.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+                  <TextField fx:id="customeridtextfield" layoutX="482.0" layoutY="66.0" style="-fx-border-color: #FBC20D;" />
+                  <Text layoutX="27.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Customer Feedback" />
+                  <Button layoutX="279.0" layoutY="435.0" mnemonicParsing="false" onAction="#submitrespondbtn" prefHeight="28.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" text="Submit Respond" />
+                  <Text fx:id="unitpricetextfield" layoutX="354.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextArea fx:id="viewcustomerfeedbacktextfield" layoutX="168.0" layoutY="167.0" prefHeight="99.0" prefWidth="465.0" />
+                  <TextArea fx:id="respondtofeedbacktextfield" layoutX="168.0" layoutY="304.0" prefHeight="109.0" prefWidth="465.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

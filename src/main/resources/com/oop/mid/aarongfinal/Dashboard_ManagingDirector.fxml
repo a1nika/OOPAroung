@@ -5,29 +5,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="535.0" prefWidth="645.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.DashboardManagingDirectorController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.DashboardManagingDirectorController">
    <children>
-      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="505.0" prefWidth="614.0" style="-fx-background-color: white;">
+      <AnchorPane prefHeight="545.0" prefWidth="655.0" style="-fx-background-color: #FBC02D;">
          <children>
-            <Label fx:id="managingdirectordashboardlabel" layoutX="151.0" layoutY="40.0" text="MANAGING DIRECTOR DASHBOARD">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Button layoutX="35.0" layoutY="114.0" mnemonicParsing="false" onAction="#salesreportbtn" prefHeight="25.0" prefWidth="140.0" text="Sales Report" />
-            <Button layoutX="35.0" layoutY="151.0" mnemonicParsing="false" onAction="#inventorymanagementbtn" text="Inventory Management" />
-            <Button layoutX="35.0" layoutY="192.0" mnemonicParsing="false" onAction="#addnewproductbtn" prefHeight="25.0" prefWidth="140.0" text="Add New Product" />
-            <Button layoutX="35.0" layoutY="234.0" mnemonicParsing="false" onAction="#customerfeedbackbtn" prefHeight="25.0" prefWidth="140.0" text="Customer Feedback" />
-            <Button layoutX="35.0" layoutY="278.0" mnemonicParsing="false" onAction="#productperformancebtn" prefHeight="25.0" prefWidth="140.0" text="Product Performance" />
-            <Button layoutX="35.0" layoutY="322.0" mnemonicParsing="false" onAction="#managepromotionbtn" prefHeight="25.0" prefWidth="140.0" text="Manage Promotion" />
-            <Button layoutX="38.0" layoutY="363.0" mnemonicParsing="false" onAction="#productlistingbtn" prefHeight="25.0" prefWidth="140.0" text="Product Listing" />
-            <Button layoutX="35.0" layoutY="403.0" mnemonicParsing="false" onAction="#financialreportbtn" prefHeight="25.0" prefWidth="140.0" text="Financial Report" />
-            <Button layoutX="500.0" layoutY="460.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #FFA700;" text="Log Out" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
+            <AnchorPane layoutX="16.0" layoutY="15.0" prefHeight="518.0" prefWidth="623.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="managingdirectordashboardlabel" alignment="CENTER" layoutY="-5.0" prefHeight="63.0" prefWidth="623.0" style="-fx-background-color: #FBC02D;" text="MANAGING DIRECTOR DASHBOARD" textFill="#900505">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="35.0" layoutY="103.0" mnemonicParsing="false" onAction="#salesreportbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Sales Report" />
+                  <Button layoutX="34.0" layoutY="146.0" mnemonicParsing="false" onAction="#inventorymanagementbtn" style="-fx-border-color: #FBC02D;" text="Inventory Management" />
+                  <Button layoutX="35.0" layoutY="192.0" mnemonicParsing="false" onAction="#addnewproductbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Add New Product" />
+                  <Button layoutX="35.0" layoutY="234.0" mnemonicParsing="false" onAction="#customerfeedbackbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Customer Feedback" />
+                  <Button layoutX="35.0" layoutY="278.0" mnemonicParsing="false" onAction="#productperformancebtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Product Performance" />
+                  <Button layoutX="35.0" layoutY="322.0" mnemonicParsing="false" onAction="#managepromotionbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Manage Promotion" />
+                  <Button layoutX="38.0" layoutY="363.0" mnemonicParsing="false" onAction="#productlistingbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Product Listing" />
+                  <Button layoutX="35.0" layoutY="403.0" mnemonicParsing="false" onAction="#financialreportbtn" prefHeight="25.0" prefWidth="140.0" style="-fx-border-color: #FBC02D;" text="Financial Report" />
+                  <Button layoutX="499.0" layoutY="466.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #FFA700;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </children>
