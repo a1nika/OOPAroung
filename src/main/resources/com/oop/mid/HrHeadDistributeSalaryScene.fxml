@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.HrHeadDistributeSalarySceneController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.HrHeadDistributeSalarySceneController">
    <children>
       <Label layoutX="252.0" layoutY="38.0" prefHeight="18.0" prefWidth="227.0" text="HR Head Distribute Salary" />
       <Label layoutX="68.0" layoutY="109.0" text="Employee NAme" />

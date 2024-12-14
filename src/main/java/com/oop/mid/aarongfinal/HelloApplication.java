@@ -1,4 +1,4 @@
-package com.oop.mid;
+package com.oop.mid.aarongfinal;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

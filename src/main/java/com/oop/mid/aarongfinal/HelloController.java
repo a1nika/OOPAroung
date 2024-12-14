@@ -1,4 +1,4 @@
-package com.oop.mid;
+package com.oop.mid.aarongfinal;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
