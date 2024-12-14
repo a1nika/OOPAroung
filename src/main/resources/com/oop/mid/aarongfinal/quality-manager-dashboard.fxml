@@ -5,57 +5,56 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="507.0" prefWidth="690.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.QualityManagerDashboard">
+<AnchorPane prefHeight="507.0" prefWidth="690.0" style="-fx-background-color: #FBC02D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.QualityManagerDashboardControllerView">
    <children>
       <AnchorPane layoutX="26.0" layoutY="24.0" prefHeight="456.0" prefWidth="638.0" style="-fx-background-color: white;">
          <children>
-            <Button layoutX="39.0" layoutY="68.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Quality Reports">
+            <Button layoutX="39.0" layoutY="68.0" mnemonicParsing="false" onAction="#qualityreportsbtn" prefHeight="27.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Quality Reports">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="39.0" layoutY="104.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Customer Review">
+            <Button layoutX="39.0" layoutY="104.0" mnemonicParsing="false" onAction="#customerreviewbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Customer Review">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="39.0" layoutY="146.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Quality Standards">
+            <Button layoutX="39.0" layoutY="146.0" mnemonicParsing="false" onAction="#qualitystandardsbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Quality Standards">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="39.0" layoutY="187.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Return Requests">
+            <Button layoutX="39.0" layoutY="187.0" mnemonicParsing="false" onAction="#returnrequestsbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Return Requests">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="39.0" layoutY="231.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Defects and Error Log">
+            <Button layoutX="39.0" layoutY="231.0" mnemonicParsing="false" onAction="#defectsanderrorlogbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Defects and Error Log">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="39.0" layoutY="275.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Vendor and Product Listings">
+            <Button layoutX="39.0" layoutY="275.0" mnemonicParsing="false" onAction="#vendorandproductlistingsbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Vendor and Product Listings">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="37.0" layoutY="318.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Data Privacy Reports">
+            <Button layoutX="37.0" layoutY="318.0" mnemonicParsing="false" onAction="#dataprivacyreportsbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Data Privacy Reports">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="211.0" layoutY="6.0" prefHeight="62.0" prefWidth="267.0" style="-fx-background-color: white;" text="Quality Manager Dashboard">
+            <Label alignment="CENTER" layoutX="211.0" layoutY="6.0" prefHeight="62.0" prefWidth="267.0" style="-fx-background-color: white;" text="Quality Manager Dashboard" textFill="#900505">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="37.0" layoutY="361.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Compliance Standards">
+            <Button layoutX="37.0" layoutY="361.0" mnemonicParsing="false" onAction="#compliancestandardsbtn" prefHeight="34.0" prefWidth="183.0" style="-fx-border-color: #FBC02D;" text="Compliance Standards">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="540.0" layoutY="408.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #FFA700;" text="Log Out" textFill="WHITE">
+            <Button layoutX="540.0" layoutY="408.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #FFA700;" text="Log Out" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>

@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.mid.aarongfinal.QualityReports"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.QualityReportsControllerView">
+   <children>
+      <AnchorPane layoutX="-39.0" prefHeight="734.0" prefWidth="982.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="48.0" layoutY="136.0" text="Product Category">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="236.0" text="Inspection items">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="183.0" text="Date Range">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dordatepicker" layoutX="156.0" layoutY="179.0" style="-fx-border-color: #FBC02D;" />
+            <ComboBox fx:id="productcombobox" layoutX="161.0" layoutY="131.0" prefWidth="150.0" style="-fx-border-color: #FBC02D;" />
+            <CheckBox fx:id="packagingcheckbox" layoutX="174.0" layoutY="236.0" mnemonicParsing="false" text="Packaging">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="functionalitycheckbox" layoutX="280.0" layoutY="236.0" mnemonicParsing="false" text="Functionality">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="45.0" layoutY="282.0" mnemonicParsing="false" onAction="#updatequalityreportsbtn" prefHeight="26.0" prefWidth="303.0" style="-fx-border-color: #FBC02D;" text="Update Qulaity Reports">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="395.0" layoutY="281.0" mnemonicParsing="false" onAction="#viewqualityreportsbtn" prefHeight="26.0" prefWidth="303.0" style="-fx-border-color: #FBC02D;" text="View Good Quality Reports">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="qualityreportstable" layoutX="162.0" layoutY="334.0" prefHeight="271.0" prefWidth="693.0">
+               <columns>
+                  <TableColumn fx:id="productcategorycolumnview" prefWidth="164.7999267578125" text="Product Category" />
+                  <TableColumn fx:id="dorcolumnview" prefWidth="163.0" text="Date Range" />
+                  <TableColumn fx:id="qualitystatuscolumnview" prefWidth="162.0" text="Quality Status" />
+                  <TableColumn fx:id="inspectionitemscolumnview" prefWidth="204.33331298828125" text="Inspection items" />
+               </columns>
+            </TableView>
+            <Button layoutX="862.0" layoutY="673.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #FBC02D;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="-10.0" prefHeight="90.0" prefWidth="945.0" style="-fx-background-color: #FBC02D;" text="Quality Reports" textFill="#900505">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="duarabilitycheckbox" layoutX="398.0" layoutY="236.0" mnemonicParsing="false" text="Durability">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <RadioButton fx:id="passradiobtn" layoutX="470.0" layoutY="136.0" mnemonicParsing="false" text="Pass">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="failradiobtn" layoutX="547.0" layoutY="131.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Fail">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="379.0" layoutY="135.0" text="Quality Status">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
