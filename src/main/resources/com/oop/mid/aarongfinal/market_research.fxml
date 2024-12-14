@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="warningtextarea" prefHeight="663.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.market_researchController">
+   <children>
+      <AnchorPane layoutX="-78.0" prefHeight="93.0" prefWidth="1037.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <Label layoutX="391.0" layoutY="25.0" text="Market Research">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="122.0" prefHeight="17.0" prefWidth="121.0" text="Research ID" />
+      <Label layoutX="29.0" layoutY="264.0" prefHeight="17.0" prefWidth="121.0" text="Target Audience" />
+      <Label layoutX="430.0" layoutY="217.0" prefHeight="17.0" prefWidth="100.0" text="Survey Date" />
+      <Label layoutX="29.0" layoutY="217.0" prefHeight="17.0" prefWidth="121.0" text="Competitor" />
+      <Label layoutX="430.0" layoutY="172.0" prefHeight="17.0" prefWidth="121.0" text="Sample Size" />
+      <Label layoutX="29.0" layoutY="172.0" prefHeight="17.0" prefWidth="121.0" text="Product Name" />
+      <Label layoutX="430.0" layoutY="124.0" prefHeight="17.0" prefWidth="69.0" text="Region" />
+      <TextField fx:id="idtextfeild" layoutX="171.0" layoutY="118.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="nametextfield" layoutX="171.0" layoutY="168.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="competitortextfield" layoutX="171.0" layoutY="212.0" style="-fx-border-color: #FBC02D;" />
+      <ComboBox fx:id="targetcombobox" layoutX="170.0" layoutY="260.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <Button layoutX="776.0" layoutY="307.0" mnemonicParsing="false" onAction="#addbtn" prefHeight="25.0" prefWidth="161.0" text="Add Record" />
+      <Button layoutX="29.0" layoutY="614.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button layoutX="880.0" layoutY="614.0" mnemonicParsing="false" onAction="#logoutbtn" text="Logout" />
+      <TableView fx:id="markettableview" layoutX="14.0" layoutY="359.0" prefHeight="240.0" prefWidth="923.0" style="-fx-border-color: #FBC02D;">
+         <columns>
+            <TableColumn fx:id="idtablecolumn" prefWidth="182.0" text="Research ID" />
+            <TableColumn fx:id="nametablecolumn" prefWidth="143.0" text="Product Name" />
+            <TableColumn fx:id="competitortablecolumn" prefWidth="133.0" text="Competitor" />
+            <TableColumn fx:id="adudiencetablecolumn" prefWidth="141.0" text="Target Audience" />
+            <TableColumn fx:id="resiontablecolumn" prefWidth="104.0" text="Region" />
+            <TableColumn fx:id="sampletablecolumn" prefWidth="94.0" text="Sample Size" />
+            <TableColumn fx:id="dobtablecolumn" prefWidth="124.0" text="Survey Date" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="dob" layoutX="562.0" layoutY="213.0" prefHeight="25.0" prefWidth="163.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="descriptiontextfield" layoutX="562.0" layoutY="168.0" style="-fx-border-color: #FBC02D;" />
+      <Button layoutX="589.0" layoutY="307.0" mnemonicParsing="false" onAction="#professionbtn" prefHeight="25.0" prefWidth="161.0" text="Show Professionals" />
+      <Button layoutX="410.0" layoutY="307.0" mnemonicParsing="false" onAction="#adultbtn" prefHeight="25.0" prefWidth="161.0" text="Show Adults" />
+      <Button layoutX="232.0" layoutY="307.0" mnemonicParsing="false" onAction="#teenbtn" prefHeight="25.0" prefWidth="161.0" text="Show Teens" />
+      <RadioButton fx:id="teenradiobutton" layoutX="516.0" layoutY="124.0" mnemonicParsing="false" text="Teens" />
+      <RadioButton fx:id="adultradiobutton" layoutX="625.0" layoutY="124.0" mnemonicParsing="false" text="Adults" />
+      <RadioButton fx:id="professionalsradiobutton" layoutX="728.0" layoutY="124.0" mnemonicParsing="false" text="Professionals" />
+   </children>
+</AnchorPane>

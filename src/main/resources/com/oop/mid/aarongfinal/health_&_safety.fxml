@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.mid.aarongfinal.HealthSafety"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="warningtextarea" prefHeight="663.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.health_and_safetyController">
+   <children>
+      <AnchorPane layoutX="-78.0" prefHeight="93.0" prefWidth="1037.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <Label layoutX="397.0" layoutY="25.0" text="Health &amp; Safety ">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="122.0" prefHeight="17.0" prefWidth="121.0" text="Incident ID" />
+      <Label layoutX="29.0" layoutY="264.0" prefHeight="17.0" prefWidth="121.0" text="Location" />
+      <Label layoutX="430.0" layoutY="217.0" prefHeight="17.0" prefWidth="100.0" text="Description" />
+      <Label layoutX="29.0" layoutY="217.0" prefHeight="17.0" prefWidth="121.0" text="Incident Type" />
+      <Label layoutX="430.0" layoutY="172.0" prefHeight="17.0" prefWidth="100.0" text="Date" />
+      <Label layoutX="29.0" layoutY="172.0" prefHeight="17.0" prefWidth="121.0" text="Reported By" />
+      <Label layoutX="430.0" layoutY="124.0" prefHeight="17.0" prefWidth="100.0" text="Severity" />
+      <TextField fx:id="idtextfeild" layoutX="171.0" layoutY="118.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="reprtedtextfield" layoutX="171.0" layoutY="168.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="incidenttextfield" layoutX="171.0" layoutY="212.0" style="-fx-border-color: #FBC02D;" />
+      <Button layoutX="776.0" layoutY="307.0" mnemonicParsing="false" onAction="#addbtn" prefHeight="25.0" prefWidth="161.0" text="Add Record" />
+      <Button layoutX="29.0" layoutY="614.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button layoutX="880.0" layoutY="614.0" mnemonicParsing="false" onAction="#logoutbtn" text="Logout" />
+      <TableView fx:id="healthtableview" layoutX="14.0" layoutY="359.0" prefHeight="240.0" prefWidth="923.0" style="-fx-border-color: #FBC02D;">
+         <columns>
+            <TableColumn fx:id="idtablecolumn" prefWidth="133.0" text="Incident ID" />
+            <TableColumn fx:id="reportedtablecolumn" prefWidth="172.0" text="Reported By" />
+            <TableColumn fx:id="incidenttablecolumn" prefWidth="147.0" text="Incident Type" />
+            <TableColumn fx:id="locationtablecolumn" prefWidth="139.0" text="Location" />
+            <TableColumn fx:id="severitytablecolumn" prefWidth="105.0" text="Severity" />
+            <TableColumn fx:id="dobtablecolumn" prefWidth="129.0" text="Date" />
+            <TableColumn fx:id="descriptiontablecolumn" prefWidth="96.0" text="Description" />
+         </columns>
+      </TableView>
+      <RadioButton fx:id="lowradiobtn" layoutX="543.0" layoutY="123.0" mnemonicParsing="false" text="Low" />
+      <RadioButton fx:id="mediumradiobtn" layoutX="612.0" layoutY="123.0" mnemonicParsing="false" text="Medium" />
+      <DatePicker fx:id="dob" layoutX="543.0" layoutY="168.0" prefHeight="25.0" prefWidth="163.0" style="-fx-border-color: #FBC02D;" />
+      <RadioButton fx:id="highradiobtn1" layoutX="709.0" layoutY="124.0" mnemonicParsing="false" text="High" />
+      <Button layoutX="601.0" layoutY="307.0" mnemonicParsing="false" onAction="#showmediumbtn" prefHeight="25.0" prefWidth="161.0" text="Show High Severity" />
+      <Button layoutX="430.0" layoutY="307.0" mnemonicParsing="false" onAction="#showmediumbtn" prefHeight="25.0" prefWidth="161.0" text="Show Medium Severity" />
+      <Button layoutX="254.0" layoutY="307.0" mnemonicParsing="false" onAction="#showlowbtn" prefHeight="25.0" prefWidth="161.0" text="Show Low Severity" />
+      <TextField fx:id="locationtextfield" layoutX="172.0" layoutY="260.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="descriptiontextfield" layoutX="543.0" layoutY="212.0" style="-fx-border-color: #FBC02D;" />
+   </children>
 </AnchorPane>

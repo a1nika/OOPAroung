@@ -5,13 +5,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="663.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.SalesPerformance">
+<AnchorPane prefHeight="663.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.sales_performanceController">
    <children>
       <AnchorPane prefHeight="93.0" prefWidth="866.0" style="-fx-background-color: #FBC02D;">
          <children>
@@ -56,6 +54,5 @@
             <TableColumn fx:id="ratingtableview" prefWidth="118.0" text="Performance Rating" />
         </columns>
       </TableView>
-      <TextArea fx:id="warningtextarea" layoutX="682.0" layoutY="116.0" prefHeight="168.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
    </children>
 </AnchorPane>
