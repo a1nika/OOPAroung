@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="744.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.aarongfinal.inventory_managementController">
+   <children>
+      <AnchorPane prefHeight="91.0" prefWidth="782.0" style="-fx-background-color: #FBC02D;">
+         <children>
+            <Label layoutX="216.0" layoutY="24.0" text="Inventory Management">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="123.0" text="Product ID" />
+      <Label layoutX="309.0" layoutY="124.0" text="Product Name" />
+      <Label layoutX="309.0" layoutY="186.0" text="Date" />
+      <Label layoutX="30.0" layoutY="186.0" prefHeight="17.0" prefWidth="58.0" text="Category" />
+      <TextField fx:id="idtextfield" layoutX="99.0" layoutY="120.0" style="-fx-border-color: #FBC02D;" />
+      <TextField fx:id="nametextfield" layoutX="410.0" layoutY="120.0" style="-fx-border-color: #FBC02D;" />
+      <ComboBox fx:id="categorycombobox" layoutX="100.0" layoutY="182.0" prefHeight="25.0" prefWidth="161.0" style="-fx-border-color: #FBC02D;" />
+      <Button layoutX="99.0" layoutY="266.0" mnemonicParsing="false" onAction="#addbtn" prefHeight="25.0" prefWidth="115.0" text="Add Product" />
+      <Button layoutX="492.0" layoutY="266.0" mnemonicParsing="false" onAction="#clearbuttononactionbutton" prefHeight="25.0" prefWidth="115.0" text="Clear Fields" />
+      <Button layoutX="304.0" layoutY="266.0" mnemonicParsing="false" onAction="#removeonactionbutton" text="Remove Product" />
+      <TableView fx:id="productinfotableview" layoutX="58.0" layoutY="341.0" prefHeight="320.0" prefWidth="667.0" style="-fx-border-color: #FBC02D;">
+        <columns>
+          <TableColumn fx:id="idtablecolumn" prefWidth="117.0" text="Product ID" />
+          <TableColumn fx:id="nametablecolumn" prefWidth="158.0" text="Product Name" />
+            <TableColumn fx:id="catagorytablecolumn" prefWidth="160.0" text="Category" />
+            <TableColumn fx:id="dobtablecolumn" prefWidth="230.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="45.0" layoutY="705.0" mnemonicParsing="false" onAction="#returnbtn" prefHeight="25.0" prefWidth="89.0" text="Return" />
+      <Button layoutX="647.0" layoutY="705.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="25.0" prefWidth="89.0" text="Log Out" />
+      <DatePicker fx:id="allocationdatePicker" layoutX="410.0" layoutY="180.0" prefHeight="25.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>
