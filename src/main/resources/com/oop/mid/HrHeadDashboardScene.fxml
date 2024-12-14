@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.HrHeadDashboardSceneController">
+   <children>
+      <Label layoutX="284.0" layoutY="37.0" text="HR Head Dashboard">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="recruitMemberButton" layoutX="150.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadRecruitMemberOnClick" prefHeight="58.0" prefWidth="139.0" text="Recruit New Member">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="distributeSalaryButton" layoutX="330.0" layoutY="98.0" mnemonicParsing="false" onAction="#LoadDistributeSalaryOnClick" prefHeight="58.0" prefWidth="139.0" text="Distribute Salary">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="aLeaveOFAbsenceButton" layoutX="521.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadALeaveOFAbsenceOnClick" prefHeight="58.0" prefWidth="139.0" text="Approve Leave of Absence">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="approveRemoteWorkButton" layoutX="144.0" layoutY="313.0" mnemonicParsing="false" onAction="#loadApproveRemoteworkOnClick" prefHeight="58.0" prefWidth="139.0" text="Approve Remote Work">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateEmployeeRecordButton" layoutX="330.0" layoutY="313.0" mnemonicParsing="false" onAction="#loadEmployeeRecordOnClick" prefHeight="58.0" prefWidth="172.0" text="Update employee Record">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="perfomenceAnnalysisButton" layoutX="521.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadPerfomenceAnnalysisOnClick" prefHeight="58.0" prefWidth="139.0" text="Perfomence Annalysis">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="workflowPlanningButton" layoutX="330.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadWorkflowPlaiingOnClick" prefHeight="58.0" prefWidth="139.0" text="Workflow Planning">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="arrangeTrainingButton" layoutX="144.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadArrangeTrainingOnClick" prefHeight="58.0" prefWidth="139.0" text="Arrange Training">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

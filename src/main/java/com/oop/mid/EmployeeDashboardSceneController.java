@@ -40,6 +40,16 @@ public class EmployeeDashboardSceneController {
 
     @FXML
     void loadLeaveOfAbsenceOnClick(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("EmployeeLeaveOfAbsenceScene.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = new Stage();
+            nextStage.setTitle("Dummy Scene");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        }
+        catch(Exception ignored){
+        }
 
     }
 
@@ -53,19 +63,40 @@ public class EmployeeDashboardSceneController {
             nextStage.setScene(nextScene);
             nextStage.show();
         }
-        catch(Exception e){
-            //
+        catch(Exception ignored){
         }
 
     }
 
     @FXML
     void loadRemoteWorkOnClick(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("EmployeeRemoteWork.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = new Stage();
+            nextStage.setTitle("Dummy Scene");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        }
+        catch(Exception ignored){
+        }
 
     }
 
     @FXML
     void loadWorkScheduleOnClick(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("EmployeeWorkScheduleScene.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = new Stage();
+            nextStage.setTitle("Dummy Scene");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        }
+        catch(Exception ignored){
+        }
+
+
 
     }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.mid.HrHeadDistributeSalarySceneController">
+   <children>
+      <Label layoutX="252.0" layoutY="38.0" prefHeight="18.0" prefWidth="227.0" text="HR Head Distribute Salary" />
+      <Label layoutX="68.0" layoutY="109.0" text="Employee NAme" />
+      <Label layoutX="68.0" layoutY="160.0" text="Employee ID" />
+      <Label layoutX="69.0" layoutY="204.0" text="Month" />
+      <Label layoutX="73.0" layoutY="248.0" text="Amount" />
+      <TextField fx:id="employeeNAmeTextField" layoutX="252.0" layoutY="105.0" />
+      <TextField fx:id="employeeIDTextField" layoutX="252.0" layoutY="156.0" />
+      <TextField fx:id="monthTextField" layoutX="252.0" layoutY="200.0" />
+      <TextField fx:id="AmountTextField" layoutX="252.0" layoutY="244.0" />
+      <Button fx:id="salarySubmitButton" layoutX="402.0" layoutY="436.0" mnemonicParsing="false" onAction="#SubmitsalaryOnClick" text="Submit" />
+   </children>
+</AnchorPane>
